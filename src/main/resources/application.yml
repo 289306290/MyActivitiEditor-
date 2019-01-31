@@ -1,0 +1,22 @@
+server:
+  port: 8018
+#  context-path: /wf/
+
+# 日志路径
+logroot: /log/
+
+
+spring:
+#  profiles: local
+  datasource:
+    name: sgtc_bank
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/act_vi
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+
+    thymeleaf:
+      content-type: text/html
+      mode: LEGACYHTML5
+      cache: false
